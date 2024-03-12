@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300&family=Rubik&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    
+}
+/* top-bar start */
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background:#CCCCCC; 
+    transition: 0.3s;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.top-bar span{
+    color: #fff; 
+}
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+.top-bar li{
+    margin: 0px 5px;
+}
+.top-bar a{
+    color:#fff;
+}
+.topbar a:hover{
+    color:#222;
+}
+.top-bar ul li a i {
+    font-size: 24px; /* Adjust the size as needed */
+}
+.fa-solid {
+    color: #2d2ddb; /* Red color */
+}
+.fa-facebook {
+    color: #1e59d8; /* Facebook blue color */
+}
+
+.fa-instagram{
+    color: #bc2a8d; /* Instagram pink color */
+}
+
+.fa-linkedin{
+    color: #0077b5; /* LinkedIn blue color */
+}
+
+
+/* top-bar end */
+
+/* nav-bar start */
+nav{
+    background: #04192d;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a{
+    color:#fff;
+}
+nav a:hover{
+    color:#ef4b3f;
+}
+.logo{
+    flex:1;
+    border-radius: 50%; 
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.logo a:hover{
+    color:#fff;
+}
+.logo img{
+    border-radius:50%;
+    margin-right: 10px;  
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+padding:15px 10px;
+font-size: 20px;
+}
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+@media screen and (max-width:600px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;     
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+
+    }
+    .menu.active,.toggle{
+        display: block;
+    }
+    .toggle{
+        position: absolute;
+        top:15px;
+        right: 20px;
+    }
+}
+.hidden{
+    top: -100px;
+}
+/* nav-bar end */
+
+/* animated background */
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position:0 50% ;
+    }
+    50%{
+        background-position:100% 50% ;
+    }
+    100%{
+        background-position:0 50% ;
+    }
+    
+}
+
+
+
+
+
+
+
+
